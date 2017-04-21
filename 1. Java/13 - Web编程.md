@@ -364,3 +364,7 @@ public void destroy()
 ### JSP内置对象
 
 https://www.nowcoder.com/profile/7404313/test/7958772/15276?onlyWrong=0
+
+### JSP作用域
+
+https://www.nowcoder.com/profile/7404313/test/7977669/55372?onlyWrong=0

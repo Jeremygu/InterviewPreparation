@@ -33,6 +33,13 @@ JDBC是一套面向对象的应用程序接口(API)，制定了访问各类关�
 
 JDBC驱动提供了特定厂商对JDBC API接口类的实现，驱动必须要提供java.sql包下面这些类的实现：Connection, Statement, PreparedStatement,CallableStatement, ResultSet和Driver。
 
+加载驱动的几种方法：
+> (1) 调用Class.forName()方法：Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+> 
+> (2) 通过添加jdbc.drivers系统属性：DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+> 
+> (3) 通过registerDriver方法注册：System.setProperty("jdbc.drivers", "com.mysql.jdbc.Driver");
+
 #### 问：PreparedStatement比Statement有什么优势？
 
 (1) PreparedStatement接口继承Statement，PreparedStatement实例包含预编译的SQL语句，执行速度要快于Statement对象，因此，性能会更好。
