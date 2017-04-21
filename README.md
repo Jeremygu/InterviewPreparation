@@ -15,4 +15,6 @@
 
 7. Probability Theory
 
+8. Advanced Algorithms 常见的算法模式
+
 内容尚不完善，有待更新，欢迎阅读并指正错误，不胜感激！
