@@ -40,15 +40,29 @@ JDBC驱动提供了特定厂商对JDBC API接口类的实现，驱动必须要�
 > 
 > (3) 通过registerDriver方法注册：System.setProperty("jdbc.drivers", "com.mysql.jdbc.Driver");
 
-#### 问：PreparedStatement比Statement有什么优势？
+### 问：Statement、PreparedSatement和CallableStatement
 
-(1) PreparedStatement接口继承Statement，PreparedStatement实例包含预编译的SQL语句，执行速度要快于Statement对象，因此，性能会更好。
+<center>
+<img src="./Java-Pic/JDBC-Statement.JPG" width="46%"/>
+</center>
+
+### 问：PreparedStatement比Statement有什么优势？
+
+PreparedStatement接口继承自Statement
+
+(1) PreparedStatement实例包含预编译的SQL语句，执行速度要快于Statement对象，因此，性能会更好。
 
 (2) PreparedStatements是预编译的，可以避免不良用户直接敲sql语句产生sql注入攻击，安全性更强。
 
 (3) 对于不同的查询参数值，PreparedStatement可以重用。
 
+https://www.nowcoder.com/profile/7404313/test/8004321/25808?onlyWrong=0
+
+https://www.nowcoder.com/profile/7404313/test/8088719/22471?onlyWrong=0
+
 #### 问：什么时候使用CallableStatement？用来准备CallableStatement的方法是什么？
+
+CallableStatement接口继承自PreparedStatement
 
 CallableStatement用来执行存储过程。存储过程是由数据库存储和提供的。存储过程可以接受输入参数，也可以有返回结果。如果有输出参数要注册说明是输出参数。非常鼓励使用存储过程，因为它提供了安全性和模块化。
 
@@ -60,8 +74,9 @@ CallableStatement用来执行存储过程。存储过程是由数据库存储和
 
 可以在应用服务器启动的时候建立很多个数据库连接并维护在一个池中。连接请求由池中的连接提供服务。在连接使用完毕以后，把连接归还到池中，以用于满足将来更多的请求。
 
+### 问：ResultSet
 
-
+https://www.nowcoder.com/profile/7404313/test/8078128/3223?onlyWrong=0
 
 
 

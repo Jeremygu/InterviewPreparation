@@ -1,5 +1,13 @@
 ## 十三、 Web编程
 
+### 问：Web应用程序的文件与目录
+
+web.xml文件是用来初始化配置信息，web.xml是放置在WEB-INF目录中， WEB-INF文件夹下有web.xml classes ilb
+
+
+
+
+
 #### 91. 什么是Servlet？
 
 Servlet是基于Java语言的web服务器端编程技术，是用来处理客户端请求并产生动态网页内容的Java类。
@@ -368,3 +376,16 @@ https://www.nowcoder.com/profile/7404313/test/7958772/15276?onlyWrong=0
 ### JSP作用域
 
 https://www.nowcoder.com/profile/7404313/test/7977669/55372?onlyWrong=0
+
+
+https://www.nowcoder.com/profile/7404313/test/7993658/15047?onlyWrong=0
+
+### JSON
+
+https://www.nowcoder.com/profile/7404313/test/7993658/56255?onlyWrong=0
+
+https://www.nowcoder.com/profile/7404313/test/8004321/15081?onlyWrong=0
+
+### 会话跟踪
+
+https://www.nowcoder.com/profile/7404313/test/8045843/15245?onlyWrong=0
